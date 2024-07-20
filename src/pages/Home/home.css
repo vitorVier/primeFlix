@@ -40,9 +40,16 @@
     justify-content: center;
     padding: 10px 0;
     font-size: 24px;
-    background: #116feb;
+    background: #116febcc;
     color: #fff;
     border-bottom-left-radius: 8px;
     border-bottom-right-radius: 8px;
     text-decoration: none;
+    transition: all .1s;
+}
+
+.lista-filmes a:hover {
+    font-weight: 600;
+    text-decoration: underline;
+    background: #116feb;
 }
