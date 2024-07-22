@@ -5,7 +5,7 @@ header {
     width: 100%;
     height: 70px;
     background: #000000;
-    padding: 0 150px;
+    padding: 0 35px;
 }
 
 .Logo {
@@ -21,6 +21,12 @@ header {
     background-color: #fff;
     text-decoration: none;
     padding: 5px 14px;
-    color: #000;
     border-radius: 4px;
+    color: #000;
+    transition: all .5s;
+}
+
+.favoritos:hover {
+    font-weight: 500;
+    background-color: dodgerblue;
 }

@@ -45,11 +45,10 @@
     border-bottom-left-radius: 8px;
     border-bottom-right-radius: 8px;
     text-decoration: none;
-    transition: all .1s;
+    transition: ease-in-out .25s;
 }
 
 .lista-filmes a:hover {
-    font-weight: 600;
     text-decoration: underline;
     background: #116feb;
 }

@@ -32,17 +32,20 @@ export default function Favoritos() {
             {filmes.length === 0 && <span>Você não possui nenhum filme salvo :(</span>}
 
             <ul>
-               {filmes.map((item) => {
+                {filmes.map((item) => {
                     return(
-                        <li key={item}>
+                        <article key={item.id}>
                             <span>{item.title}</span>
-                            <div>
-                                <Link to={`/filme/${item.id}`}>Ver detalhes</Link>
-                                <button id='exlcuir' onClick={() => excluirFilme(item.id)}>Excluir</button>
-                            </div>
-                        </li>
-                    )
-               })} 
+                            <section>
+                                <img src={`https://image.tmdb.org/t/p/original/${item.poster_path}`} alt={item.title} />
+                                <div>
+                                    <Link to={`/filme/${item.id}`}>Ver detalhes</Link>
+                                    <button id='exlcuir' onClick={() => excluirFilme(item.id)}>Excluir</button>
+                                </div>
+                            </section>  
+                        </article>
+                    );
+                })}
             </ul>
         </div>
     )
